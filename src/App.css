@@ -1,0 +1,111 @@
+.news-container {
+  font-family: Arial, sans-serif; /* Choose a nice font family */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #f1f1f1;
+}
+
+.header {
+  background-color: #ddd; /* Header background color */
+  color: #fff; /* Header text color */
+  display: flex; /* Arrange logo and navigation horizontally */
+  justify-content: space-between; /* Space items evenly */
+  padding: 15px 20px; /* Add some padding */
+  height: 40px;
+}
+
+.logo{
+  font-size: 24px;
+  font-weight: bold;
+  color: #555555;
+}
+
+.title {
+  margin-bottom: 20px;
+  text-align: center; /* Center the title */
+}
+
+.news-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap on multiple lines */
+  justify-content: center; /* Distribute cards evenly */
+  width:100%;
+  align-content: center;
+}
+
+.news-card {
+  background-color: #df8a8a;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin: 25px;
+  padding: 15px;
+  width: calc(40% - 20px); /* Calculate card width based on three columns with margins */
+  text-align: left; /* Align content to the left */
+  cursor: pointer; /* Make cards clickable */
+  transition: all 0.2s ease-in-out; /* Add smooth hover effect */
+  display:inline-block;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.news-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.news-card-layout{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+}
+.news-card-content {
+  flex-grow: 1;
+}
+
+.news-card:hover {
+  transform: scale(1.02); /* Slightly enlarge card on hover */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.news-card a:hover {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+.search{
+  width: 30%;
+  height:25px;
+  align-self: right;
+  display: flex;
+  margin-top: 10px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding:5px;
+}
+
+.pagination button {
+  background-color: #f1f1f1;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.pagination button:hover {
+  background-color: #555555;
+  color: white;
+}
