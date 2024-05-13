@@ -36,30 +36,6 @@ const App = () => {
     fetchNewsData();
   }, [searchVar]);
 
-  // useEffect(() => {
-  //   const fetchNewsData = async() => {
-  //     try {
-  //       const response = await axios.get('https://newsapi.org/v2/top-headlines', {
-  //         params: {
-  //           q: searchVar,
-  //           country: 'in',
-  //           pageSize: 6,
-  //           apiKey: '076ac79592c8488690e5c693ed7eb5d8', // Replace with your API key
-  //         },
-  //       });
-  //       let articles = await response.data.articles;
-  //       setNewsData(articles);
-  //       console.log(articles);
-  //     } catch (error) {
-  //       console.error('Error fetching news data:', error);
-  //       setError('Failed to fetch news data. Please try again later.');
-  //     }
-  //   };
-
-  //   fetchNewsData();
-  // }
-  // , [searchVar]);
-
   return (
     //Routing is done to navigate between the home page and the article detail page.
     <Router>
