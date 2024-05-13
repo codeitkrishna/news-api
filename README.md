@@ -5,17 +5,20 @@ This project demonstrates fetching top headlines from a news-api and displaying 
 Axios library is used to fetch the data from news api.
 
 ## Tech Stack
-- React
+- ReactJS
+- JavaScript
 - HTML
 - CSS
-- JavaScript
 - Axios(library)
 
 ## Running the Project
 ### Open the project directory 
-- `npm install`
-- Run this command to install all the required dependencies
+```
+npm install
+```
+Run this command to install all the required dependencies
 
-- `npm start`
-- This command runs the project on the address 'localhost:3000/' on your browser. 
-
+```
+npm start
+```
+This command runs the project on the address 'localhost:3000/' on your browser.
