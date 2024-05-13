@@ -1,0 +1,115 @@
+.news-container {
+  font-family: Arial, sans-serif; /* Choose a nice font family */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.header {
+  background-color: #333; /* Header background color */
+  color: #fff; /* Header text color */
+  display: flex; /* Arrange logo and navigation horizontally */
+  justify-content: space-between; /* Space items evenly */
+  padding: 15px 20px; /* Add some padding */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navigation {
+  display: flex;
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none; /* Remove underline */
+  padding: 10px 15px;
+}
+
+.navigation a:hover {
+  background-color: #222; /* Change background on hover */
+  transition: background-color 0.2s ease; /* Smooth transition */
+}
+
+.main {
+  padding: 20px;
+}
+
+.title {
+  margin-bottom: 20px;
+  text-align: center; /* Center the title */
+}
+
+.news-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap on multiple lines */
+  justify-content: center; /* Distribute cards evenly */
+  width:100%;
+  align-content: center;
+}
+
+.news-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin: 25px;
+  padding: 15px;
+  width: calc(40% - 20px); /* Calculate card width based on three columns with margins */
+  text-align: left; /* Align content to the left */
+  cursor: pointer; /* Make cards clickable */
+  transition: all 0.2s ease-in-out; /* Add smooth hover effect */
+  display:inline-block;
+}
+
+.news-card:hover {
+  transform: scale(1.02); /* Slightly enlarge card on hover */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Add these styles to your existing CSS file (App.css) */
+
+.article-detail {
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 auto; /* Center the article */
+  max-width: 800px; /* Limit width for larger screens */
+  font-family: Arial, sans-serif;
+}
+
+.article-detail-header {
+  display: flex;
+  justify-content: space-between; /* Align title and meta info */
+  margin-bottom: 20px;
+}
+
+.article-detail-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.article-detail-meta {
+  font-size: 14px;
+  color: #888;
+}
+
+.article-detail-content {
+  display: flex;
+  flex-wrap: wrap; /* Allow text to wrap around image */
+}
+
+.article-detail-image {
+  width: 100%;
+  margin-right: 20px; /* Space between image and text */
+  border-radius: 5px; /* Rounded corners for image */
+}
+
+.article-detail-text p {
+  line-height: 1.5; /* Improve readability with line spacing */
+  font-size: 16px;
+}
