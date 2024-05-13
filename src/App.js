@@ -21,7 +21,6 @@ const App = () => {
           params: {
             q: searchVar,
             country: 'in',
-            // pageSize: 6,
             apiKey: '076ac79592c8488690e5c693ed7eb5d8', // Replace with your API key
           },
         });
