@@ -37,7 +37,7 @@ const NewsSection = ({newsData, error, setSearchVar}) => {
     return (
       <div key={index} className="news-card">
         <div class="news-card-layout">
-        <img src={article.urlToImage}/>
+        <img src={article.urlToImage} alt="Image not available"/>
         <h3 className="news-card-title">{article.title}</h3>
         </div>
         
